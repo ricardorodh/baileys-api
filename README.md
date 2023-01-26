@@ -18,6 +18,17 @@ An implementation of [@adiwajshing/Baileys](https://github.com/adiwajshing/Baile
 1. Copy the `.env.example` file and rename it into `.env`, then update your [connection url](https://www.prisma.io/docs/reference/database-reference/connection-urls) in the `DATABASE_URL` field
 1. Run your [migration](https://www.prisma.io/docs/reference/api-reference/command-reference#prisma-migrate). Don't forget to always re-run your migration whenever there's a change on the `prisma/` directory
 
+## Install
+
+```install
+git clone https://github.com/ricardorodh/baileys-api.git
+cd baileys-api
+------> configure .env
+npm install
+npm run build
+npx prisma migrate dev
+```
+
 ## `.env` Configurations
 
 ```env
